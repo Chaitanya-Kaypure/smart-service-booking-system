@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:smart_service_booking_test;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  flyway:
+    enabled: true
+
+app:
+  jwt:
+    secret: dGVzdC1zZWNyZXQta2V5LWZvci1qd3Qtc2lnbmluZy1taW4tMzItYnl0ZXMtbG9uZw==
+  cors:
+    allowed-origins: http://localhost:5173

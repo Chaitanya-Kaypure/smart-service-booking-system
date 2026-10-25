@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:smart_service_booking}?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: false
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:Zm9yLWxvY2FsLWRldmVsb3BtZW50LW9ubHktYmFzZTY0LW5vdC1wcm9kLXNlY3JldC1rZXktbWluLTMyLWJ5dGVzLWxlbmd0aA==}

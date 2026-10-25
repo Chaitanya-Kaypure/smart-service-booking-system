@@ -1,0 +1,3 @@
+-- Optional local development seed data (users/appointments).
+-- Use ADMIN_EMAIL / ADMIN_PASSWORD env bootstrap for admin account.
+-- Add demo customers and appointments here for local demos if needed.
